@@ -24,9 +24,16 @@ Once the service is running locally, you can access it by putting this in your b
 
     http://localhost:9000/numdesc/123
 
-The 123 at the end of the URL is the parameter passed to the endpoint. The json response will contain an English text representation of the number:
+The 123 at the end of the URL is the parameter passed to the endpoint. The json response will contain an English text
+representation of the number:
 
     {"number":123,"description":"One hundred and twenty three"}
 
-The endpoint handles any number that can be represented as a 32-bit signed integer. Decimal numbers, numbers that are too large, or other strings will return a 400 BAD REQUEST response.
+The endpoint handles any number that can be represented as a 32-bit signed integer. Decimal numbers, numbers that are
+too large, or other strings will return a 400 BAD REQUEST response.
 
+
+Note:
+
+This project uses lombok (https://projectlombok.org/). Lombok dynamically generates getters, setters, and constructors.
+This may require a plugin for your IDE to not flag compilation errors when it can't find getter and setter methods.
