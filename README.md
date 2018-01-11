@@ -6,7 +6,9 @@ To build and run, this service requires:
 * Maven 3+
 
 To build:
-clone the repository
+
+Clone the repository.
+
 From the root of the repository run:
 
     mvn clean package
